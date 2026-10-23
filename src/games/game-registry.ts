@@ -1,0 +1,73 @@
+import { GameId, GameMetadata } from '../types/game';
+
+export const GAME_REGISTRY: Record<GameId, GameMetadata> = {
+  'lucky-wheel': {
+    id: 'lucky-wheel',
+    name: 'Lucky Wheel',
+    vietnameseName: 'Vòng Quay May Mắn',
+    shortDesc: 'Vòng quay rực rỡ ánh đèn arcade với kim chỉ chuẩn xác và nhịp quay kịch tính.',
+    badge: 'Cổ Điển & Sôi Động',
+    accentColor: '#8B5CF6',
+    secondaryColor: '#FFD166',
+    gradient: 'from-violet-600/30 via-fuchsia-600/20 to-amber-400/20',
+    actionButtonLabel: 'QUAY NGAY',
+  },
+  lottery: {
+    id: 'lottery',
+    name: 'Lucky Lottery',
+    vietnameseName: 'Quay Số Truyền Hình',
+    shortDesc: 'Bảng điện tử LED chuẩn gameshow với hiệu ứng quét tần số và khóa từng chữ số.',
+    badge: 'Hồi Hộp Từng Số',
+    accentColor: '#38DDF8',
+    secondaryColor: '#55E6A5',
+    gradient: 'from-sky-500/30 via-cyan-500/20 to-emerald-400/20',
+    actionButtonLabel: 'QUAY SỐ',
+  },
+  'mystery-box': {
+    id: 'mystery-box',
+    name: 'Mystery Box',
+    vietnameseName: 'Hộp Quà Bí Ẩn',
+    shortDesc: 'Không gian kho báu lơ lửng nhiệm màu. Chọn hộp quà phát sáng để khui tên người thắng!',
+    badge: 'Bất Ngờ & Kỳ Diệu',
+    accentColor: '#FF6B8A',
+    secondaryColor: '#FFD166',
+    gradient: 'from-rose-500/30 via-pink-500/20 to-amber-400/20',
+    actionButtonLabel: 'BÓC THĂM',
+  },
+  'duck-race': {
+    id: 'duck-race',
+    name: 'Duck Race',
+    vietnameseName: 'Đua Vịt Về Đích',
+    shortDesc: 'Đường đua hồ nước náo nhiệt với những chú vịt hóa trang vỗ cánh vượt chướng ngại vật.',
+    badge: 'Đua Top Cực Vui',
+    accentColor: '#FFD166',
+    secondaryColor: '#38DDF8',
+    gradient: 'from-amber-400/30 via-yellow-500/20 to-sky-400/20',
+    actionButtonLabel: 'XUẤT PHÁT',
+  },
+  jackpot: {
+    id: 'jackpot',
+    name: 'Super Jackpot',
+    vietnameseName: 'Máy Quay Jackpot',
+    shortDesc: 'Cỗ máy Arcade 3 trục quay neon rực rỡ cùng hiệu ứng nổ hũ vinh danh người chiến thắng.',
+    badge: 'Arcade Neon',
+    accentColor: '#55E6A5',
+    secondaryColor: '#8B5CF6',
+    gradient: 'from-emerald-400/30 via-teal-500/20 to-violet-500/20',
+    actionButtonLabel: 'GIẬT CẦN QUAY',
+  },
+  'ufo-abduction': {
+    id: 'ufo-abduction',
+    name: 'UFO Abduction',
+    vietnameseName: 'UFO Bắt Người',
+    shortDesc: 'Thành phố đêm sống động với hàng trăm cư dân đa dạng và phi thuyền UFO chiếu tia bắt cóc!',
+    badge: 'Siêu Phẩm Độc Quyền',
+    accentColor: '#38DDF8',
+    secondaryColor: '#8B5CF6',
+    gradient: 'from-indigo-600/40 via-purple-600/30 to-cyan-400/30',
+    actionButtonLabel: 'PHÓNG UFO BẮT NGƯỜI',
+  },
+};
+
+export const GAME_LIST: GameMetadata[] = Object.values(GAME_REGISTRY);
+
